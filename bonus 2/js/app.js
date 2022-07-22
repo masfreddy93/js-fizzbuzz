@@ -38,16 +38,21 @@ for(let i=0; i<100; i++) {
     let multiple5 = number % 5;
     let buzz = 'Buzz';
 
+    let container = document.createElement("div");
+
     if(multiple3 === 0) {
         number = fizz;
+        container.style.backgroundColor = 'red';
     }
 
     if(multiple5 === 0){
         number = buzz;
+        container.style.backgroundColor = 'blue';
     }
 
     if((multiple3 === 0) && (multiple5 === 0)){
         number = fizz + buzz;
+        container.style.backgroundColor = 'yellow';
     }
 
 
@@ -63,10 +68,12 @@ for(let i=0; i<100; i++) {
             // aggiungo variabile griglia che selezioni la classe main
             // appendo alla griglia la variabile container 
             // ho la mia lista di numeri nell'html
-    let container = document.createElement("div");
+    // let container = document.createElement("div");
     container.append(number + ' ')
     console.log(container)
     container.classList.add('numeri');
+    
+    
 
     let griglia = document.querySelector('.main')
     griglia.append(container)
