@@ -52,4 +52,22 @@ for(let i=0; i<100; i++) {
 
 
     console.log(number)
+
+
+    // bonus
+        // Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
+            // creo variabile container 
+            // assegno alla variabile container un document createElement('div')
+            // aggiungo (con append) alla variabile container un elemento html che mostri la sequenza di numeri e stringhe
+            // mostro risultato in console
+            // mostro risultato in html
+    let container = document.createElement("div");
+    container.append(number + ' ')
+    console.log(container)
+
+    let griglia = document.querySelector('.main')
+    griglia.append(container)
+
+    
 }
+
