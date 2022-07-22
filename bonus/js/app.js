@@ -58,9 +58,11 @@ for(let i=0; i<100; i++) {
         // Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
             // creo variabile container 
             // assegno alla variabile container un document createElement('div')
-            // aggiungo (con append) alla variabile container un elemento html che mostri la sequenza di numeri e stringhe
+            // aggiungo (con append) alla variabile container un elemento html che mostri il numero o la stringa
             // mostro risultato in console
-            // mostro risultato in html
+            // aggiungo variabile griglia che selezioni la classe main
+            // appendo alla griglia la variabile container 
+            // ho la mia lista di numeri nell'html
     let container = document.createElement("div");
     container.append(number + ' ')
     console.log(container)
