@@ -66,10 +66,20 @@ for(let i=0; i<100; i++) {
     let container = document.createElement("div");
     container.append(number + ' ')
     console.log(container)
+    container.classList.add('numeri');
 
     let griglia = document.querySelector('.main')
     griglia.append(container)
 
-    
+
+    // bonus 2
+        // Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
+            // dai una classe al div container (contenitore di numeri e stringhe)
+            // dai stile alla nuova classe
+            // dai stile al main
+            // colora i "numeri" in base al contenuto (numero, multiplo di 3, multiplo di 5, multiplo di 3 e di 5)
+
+
+
 }
 
